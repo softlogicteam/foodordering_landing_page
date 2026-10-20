@@ -110,13 +110,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSimulator }) => {
             onClick={(e) => handleNavClick(e, "#beranda")}
             className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 to-amber-500 flex items-center justify-center text-slate-950 shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform">
+            <div className="hidden w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 to-amber-500 sm:flex items-center justify-center text-slate-950 shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform">
               <Coffee className="w-5 h-5 font-black text-slate-950" />
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-lg tracking-tight text-white group-hover:text-brand-400 transition-colors">
-                  Cafe<span className="text-brand-400">Order</span>
+                  Food<span className="text-brand-400">Ordering</span>
                 </span>
                 <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/20">
                   Platform

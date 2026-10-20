@@ -103,7 +103,7 @@ const encoder = new EscPosEncoder();
 const buffer = encoder
   .initialize()
   .align('center')
-  .line('CAFE ORDER SYSTEM')
+  .line('FOOD ORDERING SYSTEM')
   .line('--------------------------------')
   .align('left')
   .line('Meja: #05          Pesanan: #1042')
@@ -151,7 +151,8 @@ export const TechStackShowcase: React.FC = () => {
   const [selectedTech, setSelectedTech] = useState(TECH_FEATURES[0].id);
   const [copied, setCopied] = useState(false);
 
-  const activeItem = TECH_FEATURES.find((t) => t.id === selectedTech) || TECH_FEATURES[0];
+  const activeItem =
+    TECH_FEATURES.find((t) => t.id === selectedTech) || TECH_FEATURES[0];
 
   const handleCopy = () => {
     navigator.clipboard.writeText(activeItem.codeSnippet);
@@ -160,7 +161,10 @@ export const TechStackShowcase: React.FC = () => {
   };
 
   return (
-    <section id="teknologi" className="py-24 bg-slate-950 relative overflow-hidden border-t border-slate-800">
+    <section
+      id="teknologi"
+      className="py-24 bg-slate-950 relative overflow-hidden border-t border-slate-800"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -175,8 +179,9 @@ export const TechStackShowcase: React.FC = () => {
             </span>
           </h2>
           <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Dibangun dengan standar rekayasa software modern untuk menjamin sistem tetap responsif,
-            kredensial aman, dan tanpa celah race-condition pada puncak kepadatan pengunjung.
+            Dibangun dengan standar rekayasa software modern untuk menjamin
+            sistem tetap responsif, kredensial aman, dan tanpa celah
+            race-condition pada puncak kepadatan pengunjung.
           </p>
         </div>
 
@@ -200,7 +205,9 @@ export const TechStackShowcase: React.FC = () => {
                     {tech.tag}
                   </span>
                 </div>
-                <h4 className="text-sm font-bold text-white truncate">{tech.name}</h4>
+                <h4 className="text-sm font-bold text-white truncate">
+                  {tech.name}
+                </h4>
               </button>
             );
           })}
@@ -216,18 +223,26 @@ export const TechStackShowcase: React.FC = () => {
                   {activeItem.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white">{activeItem.name}</h3>
-                  <span className="text-xs font-mono text-brand-400">{activeItem.tag}</span>
+                  <h3 className="text-xl sm:text-2xl font-black text-white">
+                    {activeItem.name}
+                  </h3>
+                  <span className="text-xs font-mono text-brand-400">
+                    {activeItem.tag}
+                  </span>
                 </div>
               </div>
 
-              <p className="text-sm text-slate-300 leading-relaxed">{activeItem.summary}</p>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                {activeItem.summary}
+              </p>
 
               <div className="space-y-3 pt-2">
                 {activeItem.details.map((detail, idx) => (
                   <div key={idx} className="flex items-start gap-2.5">
                     <div className="w-1.5 h-1.5 rounded-full bg-brand-400 mt-2 shrink-0" />
-                    <span className="text-xs sm:text-sm text-slate-300">{detail}</span>
+                    <span className="text-xs sm:text-sm text-slate-300">
+                      {detail}
+                    </span>
                   </div>
                 ))}
               </div>

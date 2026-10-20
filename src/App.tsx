@@ -57,7 +57,7 @@ export const App: React.FC = () => {
         {/* 3 Flexible Payment Workflows */}
         <PaymentModesSection />
 
-        {/* Conventional Cafe vs CafeOrder Comparison */}
+        {/* Conventional Cafe vs FoodOrdering Comparison */}
         <ComparisonSection />
 
         {/* Frequently Asked Questions */}
